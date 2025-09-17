@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz em Quadrantes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="titulo">Quiz de Lógica</h1>
+    <div id="quiz-box">
+      <h2 id="question">Carregando pergunta...</h2>
+      <div class="grid-respostas">
+        <!-- Botões de resposta em 4 quadrantes -->
+        <button class="resposta" id="resposta0" onclick="escolherResposta(0)"></button>
+        <button class="resposta" id="resposta1" onclick="escolherResposta(1)"></button>
+        <button class="resposta" id="resposta2" onclick="escolherResposta(2)"></button>
+        <button class="resposta" id="resposta3" onclick="escolherResposta(3)"></button>
+      </div>
+      <button id="next-btn" onclick="proximaPergunta()" style="display: none;">Próxima</button>
+    </div>
+
+    <div id="resultado" style="display: none;">
+      <h2>Resultado Final</h2>
+      <p id="pontuacao"></p>
+      <button onclick="reiniciarQuiz()">Tentar novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
